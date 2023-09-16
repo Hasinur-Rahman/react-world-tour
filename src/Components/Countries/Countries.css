@@ -1,0 +1,37 @@
+
+
+.countries{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.max-width{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.Flag-container{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.Flag-container img{
+    width: 100px;
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 768px) and  (min-width: 601px){
+    .countries{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .countries{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+  }
